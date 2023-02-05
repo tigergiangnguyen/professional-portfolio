@@ -1,0 +1,147 @@
+/* makes the transition to move to the h2 without jumping */
+html {
+    scroll-behavior: smooth;
+  }
+
+/* any repeated color goes into the root */
+:root {
+    --main-bg-color: #eb5757;
+}
+
+/* universal selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+/* targets all h2 tags */
+h2 {
+    font-size: 22px;
+    font-style: inherit;
+}
+
+/* targets all p tags */
+p {
+    font-size: 24px;
+    font-family: Andale Mono, monospace;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: beige;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-text {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: blueviolet;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;  
+    background-color: royalblue;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+  
+.card header {
+    padding: 20px;
+    background: var(--main-bg-color);
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+    min-width: 400px;
+}
+
+/* targets only the id of panda without targeting the rest */
+#panda {
+    background-color: royalblue;
+}
+
+.paper {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: end;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.contact-links {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* effects the visual screen to a smaller dimensions */
+@media screen and (max-width: 992px) {
+.card {
+  width: 50%;
+  background: green;
+}
+.head {
+    background: green;
+  }
+/* this id isn't part of the main so it needs it's own command */
+#panda {
+    width: 100%;
+    background: green;
+}
+}
+
+@media screen and (max-width: 768px) {
+.card {
+  width: 100%;
+  background: yellow;
+}
+.head {
+    background: yellow;
+  }
+#panda {
+    width: 100%;
+    background: yellow;
+}
+}
