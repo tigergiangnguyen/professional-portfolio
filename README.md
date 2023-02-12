@@ -25,4 +25,8 @@ MIT License
 
 ## Screenshot of the website
 
-assets\screenshotofwebsite.jpg
+![alt text](assets/screenshotofwebsite.jpg)
+
+## Link to the deployed application
+
+https://tigergiangnguyen.github.io/professional-portfolio/
