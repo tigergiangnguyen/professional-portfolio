@@ -132,6 +132,7 @@ footer {
 }
 }
 
+/* effects the visual screen to a smaller dimensions */
 @media screen and (max-width: 768px) {
 .card {
   width: 100%;
